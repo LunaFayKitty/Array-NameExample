@@ -1,0 +1,82 @@
+:root {
+  --txtColor: rgb(94, 94, 94);
+  --bkgColor: gainsboro;
+  --lightgray: rgb(202, 197, 197);
+  --white: white;
+  --blue: rgb(105, 183, 235);
+}
+
+body {
+  font-size: 2em;
+  font-weight: 800;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+main {
+  margin: 3em;
+}
+h1 {
+  color: var(--blue);
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+.Eingabe {
+  display: flex;
+  width: 100%;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bkgColor);
+  padding: 0.8em;
+  color: var(--txtColor);
+  font-weight: 800;
+  border: none;
+}
+::-webkit-input-placeholder {
+  color: var(--lightgray);
+}
+button {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  padding: 0.8em;
+}
+#Hinzufuegen {
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+}
+#Entfernen {
+  background-color: var(--white);
+  color: var(--blue);
+  border: solid var(--blue);
+}
+ul > li {
+  display: flex;
+  padding: 0.8em;
+  border: solid var(--txtColor);
+  margin: 0.5em 0;
+  background-color: var(--bkgColor);
+  color: var(--txtColor);
+}
+ul {
+  padding-inline-start: 0px;
+}
+
+@media only screen and (max-width: 900px) {
+  .Eingabe {
+    flex-direction: column;
+    gap: 0.2em;
+  }
+  button {
+    width: 100%;
+  }
+}
